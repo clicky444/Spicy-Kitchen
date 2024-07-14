@@ -8,7 +8,7 @@ const generateToken = (res, userId) => {
     // Ensure secure is false in development
     res.cookie('jwt', token, {
         httpOnly: true,
-        secure: process.env.NODE_ENV !== 'development', // set to false for local development if necessary
+        secure: process.env.NODE_ENV !== 'production', // set to false for local development if necessary
         sameSite: 'Strict',
         maxAge: 30 * 24 * 60 * 60 * 1000, // 30 days
     });
