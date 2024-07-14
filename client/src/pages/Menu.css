@@ -1,0 +1,51 @@
+.hide-on-hover {
+    visibility: visible;
+    transition: visibility 0s ease;
+  }
+  
+  .hide-on-hover:hover {
+    visibility: hidden;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 400px; 
+    height: 400px; 
+  }
+  
+  .image-wrapper {
+    display: inline-block;
+    overflow: hidden;
+  }
+  .select-dropdown {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f5f5f5 url("../assets/navbar/caret-down-solid.svg") no-repeat right 0.5rem center;
+    background-size: 1rem 1rem;
+    padding-right: 2rem; 
+  }
+
+
+
+  .custom-scrollbar::-webkit-scrollbar{
+    width: 8px;
+    display: none;
+
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track{
+   background: rgba(255, 255, 255, 0.693);
+    border-radius: 8px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb{
+    background: rgb(237, 231, 231);
+    border-radius: 8px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover{
+    background: rgb(196, 191, 191);
+  }
+  
+  

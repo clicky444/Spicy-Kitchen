@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miss+Fajardose&display=swap');
+
+h1{
+    font-family: "Monoton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.counter{
+    background: url('../src/assets/home/bg_4.jpg');
+    background-size: cover;
+
+}
+
+.intro-about{
+    font-family: "Miss Fajardose", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100px;
+}
+
+.review-gallery {
+    position: relative;
+    padding: 50px 0;
+    overflow: hidden; 
+  }
+  
+  .review-gallery::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./assets/home/bg_5.jpg') center center/cover no-repeat;
+    opacity: 0.5; 
+    z-index: -1; 
+  }
+  
+
+.slick-slide > div{
+    margin: 0 10px;
+}
