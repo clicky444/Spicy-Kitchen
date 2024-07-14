@@ -12,7 +12,7 @@
     "dev": "concurrently \"npm run serve\" \"npm run client\" \"npm run admin\"",
     "data:import": "node backend/seeder.js",
     "data:destroy": "node backend/seeder.js -d",
-    "build": "npm install --force && npm install --force --prefix client && npm run build --prefix client && npm install --force --prefix admin && npm run build --prefix admin"
+    "build": "npm install && npm install --prefix client && npm run build --prefix client && npm install --prefix admin && npm run build --prefix admin"
   },
   "author": "Hiran Wasalaarachchi",
   "license": "ISC",
