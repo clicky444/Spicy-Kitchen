@@ -5,10 +5,12 @@ const generateToken = (res, userId) => {
         expiresIn: '30d',
     });
 
-    // Ensure secure is false in development
+    // Ensure secure is false for non-SSL environments
+    const secure = process.env.NODE_ENV === 'production' && process.env.USE_SSL === 'true';
+
     res.cookie('jwt', token, {
         httpOnly: true,
-        secure: process.env.NODE_ENV === 'production', // set to false for local development if necessary
+        secure: secure, // Set secure to true only if in production environment with SSL
         sameSite: 'Strict',
         maxAge: 30 * 24 * 60 * 60 * 1000, // 30 days
     });
