@@ -5,15 +5,14 @@ const generateToken = (res, userId) => {
         expiresIn: '30d',
     });
 
-    // Ensure secure is false in development
     res.cookie('jwt', token, {
         httpOnly: true,
-        secure: process.env.NODE_ENV !== 'development', // set to false for local development if necessary
+        secure: process.env.NODE_ENV !== 'development', 
         sameSite: 'Strict',
-        maxAge: 30 * 24 * 60 * 60 * 1000, // 30 days
+        maxAge: 30 * 24 * 60 * 60 * 1000, 
     });
 
-    console.log('Token set in cookie:', token); // Log the token
+    console.log('Token set in cookie:', token); 
 };
 
 export default generateToken;
