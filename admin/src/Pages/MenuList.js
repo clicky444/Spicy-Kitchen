@@ -220,7 +220,7 @@ const MenuList = () => {
               <ProductCard
                 key={product._id}
                 id={product._id}
-                image={product.image}
+                image={`${BASE_URL}${product.image}`}
                 title={product.title}
                 price={`LKR ${product.price.toFixed(2)}`}
                 category={product.category}
