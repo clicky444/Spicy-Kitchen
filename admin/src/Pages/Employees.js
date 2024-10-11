@@ -12,6 +12,7 @@ import Spinner from '../components/Spinner';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Dropdown from '../components/Dropdown';
+import { BASE_URL } from '../constants';
 
 const Employees = () => {
   const [popup, setPopUp] = useState(false);
@@ -310,7 +311,7 @@ const Employees = () => {
                         >
                           <th scope="row" className="px-6 py-4 font-medium text-lg text-black whitespace-nowrap dark:text-white">
                             <div className="flex -flex-row items-center dark:text-white">
-                              <img src={`${employee.image}`} className="w-14 h-14 mr-4 rounded-full " alt="profile" />
+                              <img src={`${BASE_URL}${employee.image}`} className="w-14 h-14 mr-4 rounded-full " alt="profile" />
                               {employee.name}
                             </div>
                           </th>
