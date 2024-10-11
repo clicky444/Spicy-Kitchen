@@ -310,7 +310,7 @@ const Employees = () => {
                         >
                           <th scope="row" className="px-6 py-4 font-medium text-lg text-black whitespace-nowrap dark:text-white">
                             <div className="flex -flex-row items-center dark:text-white">
-                              <img src={employee.image} className="w-14 h-14 mr-4 rounded-full " alt="profile" />
+                              <img src={`${employee.image}`} className="w-14 h-14 mr-4 rounded-full " alt="profile" />
                               {employee.name}
                             </div>
                           </th>
