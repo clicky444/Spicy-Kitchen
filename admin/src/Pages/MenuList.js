@@ -11,6 +11,7 @@ import Dropdown from '../components/Dropdown';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../Pages/style.css'
+import { BASE_URL } from '../constants';
 
 
 const MenuList = () => {
