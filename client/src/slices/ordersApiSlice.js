@@ -36,6 +36,7 @@ export const ordersApiSlice = apiSlice.injectEndpoints({
     getMyOrders: builder.query({
       query: () => ({
         url: `${ORDERS_URL}/mine`,
+        credentials: 'include', 
       }),
       keepUnusedDataFor: 5,
     }),
