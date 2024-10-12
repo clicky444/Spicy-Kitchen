@@ -58,7 +58,7 @@ const registerUser = asyncHandler(async (req, res) => {
             token: crypto.randomBytes(32).toString("hex"),
         }).save();
 
-        const url = `http://localhost:3000/users/${user._id}/verify/${token.token}`;
+        const url = `https://spicy-kitchen-client.onrender.com/users/${user._id}/verify/${token.token}`;
         await sendVerificationEmail(user.email, "Verify Email", url);
 
         return res.status(201).json({
@@ -152,7 +152,7 @@ const confirmEmailVerification = asyncHandler(async (req, res) => {
         token: crypto.randomBytes(32).toString("hex"),
     }).save();
 
-    const url = `http://localhost:3000/users/${user._id}/resetpassword/${token.token}`;
+    const url = `https://spicy-kitchen-client.onrender.com/users/${user._id}/resetpassword/${token.token}`;
     await sendVerificationEmail(user.email, "Reset Password", url);
 
     res.status(200).json({ message: "A password reset email has been sent to your account" });
