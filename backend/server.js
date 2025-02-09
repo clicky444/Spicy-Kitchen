@@ -26,7 +26,7 @@ const port = process.env.PORT || 5000;
 
 // Middleware to enable CORS with credentials
 const corsOptions = {
-    origin: ['https://spicy-kitchen-admin.onrender.com', 'https://restaurant-client-2xwi.onrender.com'],
+    origin: ['https://spicy-kitchen-admin.onrender.com', 'https://spicy-kitchen-client.onrender.com'],
     credentials: true,               
 };
 app.use(cors(corsOptions));
